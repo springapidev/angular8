@@ -1,0 +1,88 @@
+//@import "variables";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+//@import "~bootstrap/scss/utilities"; // add css utilities
+//@import "reset";
+
+@import url('//fonts.googleapis.com/icon?family=Material+Icons');
+//@import url('//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.7.1/angular-material-icons.min.js');
+@import 'custom-theme';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+  .mainToolbar .toolbar-icon {
+     margin: 0 8px;
+     cursor: pointer;
+     font-size: 32px;
+     height: 32px;
+     width: 32px;
+  }
+  .mainToolbar .toolbar-avatar {
+     background-size: cover;
+     box-shadow: none;
+     background-image: url('http://i.pravatar.cc/300');
+  }
+  
+  .mainToolbar .toolbar-spacer {
+     flex: 1 1 auto;
+  }
+  
+  .example-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  .example-container > * {
+    width: 100%;
+  }
+  
+  
+  //  For tabbed bottom line
+  .tabs .mat-ink-bar {
+     height: 4px;
+  }
+  
+  .example-form mat-form-field{
+    margin: 25px;
+    width: 80%;
+  }
+  
+  .example-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  .example-margin {
+    margin: 0 10px;
+}
+.btn-wrapper {
+padding: 10px;
+}
+
+.btn {
+margin-left: 6px !important;
+margin-right: 6px !important;
+width:36px!important;
+height:36px!important;
+}
+
+.btn-default {
+background-color: #3F51B5 !important;
+}
+
+.btn-purple {
+background-color: #9C27B0 !important;
+}
+
+.btn-pink {
+background-color: #E91E63 !important;
+}
+
+.btn-deep-orange {
+background-color: #FF5722 !important;
+}

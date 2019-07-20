@@ -1,0 +1,10 @@
+<h2>More Request</h2>
+<button mat-button color="accent" type="button" (click)="makepost()">Make Post Request</button>
+<button mat-button color="primary" type="button" (click)="makeHttpDelete()">Make Delete Request</button>
+
+<button mat-button color="accent" type="button" (click)="makeHttpHeaders()">Make Headers</button>
+
+<div *ngIf="loading">Loading..........</div>
+<pre>
+    {{data | json}}
+</pre>

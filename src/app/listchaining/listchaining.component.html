@@ -1,0 +1,34 @@
+
+<hr>
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+        <div style="text-align:center">
+                <h2>Chaining example</h2>
+        </div>
+       
+        <div class="form-group">
+          <label class="control-label" for="Country">Country:</label>
+          <select *ngIf="countries" name="onSelectCountry" (change)="onSelectCountry($event.target.value)" class="form-control input-lg" id="country"
+             >
+             <option value="0">Select Country</option>
+            <option *ngFor="let country of countries" value= {{country.id}}>{{country.name}}</option>
+          </select>
+        </div>
+       
+        <div class="form-group">
+          <label class="control-label" for="States">States:</label>
+          <select  class="form-control input-lg" id="state" (change)="onSelectState($event.target.value)" >
+              <option value="0">Select State</option>
+            <option *ngFor="let state of states" value= {{state.id}}>{{state.name}}</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+                <label class="control-label" for="city">Cities:</label>
+                <select  class="form-control input-lg" id="city">
+                    <option value="0">Select City</option>
+                  <option *ngFor="let city of cities" value= {{city.id}}>{{city.name}}</option>
+                </select>
+              </div>
+      
+      </div>

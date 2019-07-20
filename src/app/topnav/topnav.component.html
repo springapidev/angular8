@@ -1,0 +1,54 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="true">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/">Dashboard</a>
+      <mat-divider color="accent"></mat-divider>
+      <a mat-list-item routerLink="/table">Table</a>
+      <mat-divider color="accent"></mat-divider>
+      <a mat-list-item routerLink="/form">Form</a>
+      <mat-divider color="accent"></mat-divider>
+      <a mat-list-item routerLink="/tree">Tree</a>
+      <mat-divider color="accent"></mat-divider>
+      <a mat-list-item routerLink="/dragndrop">Drag n Drop</a>
+      <mat-divider color="accent"></mat-divider>
+      <a mat-list-item routerLink="/signup">Sign Up</a>
+      <mat-divider color="accent"></mat-divider>
+      <a mat-list-item routerLink="/cardview">Card View</a>
+      <mat-divider color="accent"></mat-divider>
+      <a mat-list-item routerLink="/listchaining">List Chaining</a>
+      <mat-divider color="accent"></mat-divider>
+      <a mat-list-item routerLink="/tabs">Tabs</a>
+      <mat-divider color="accent"></mat-divider>
+      <a mat-list-item routerLink="/simple-http">Simple Http </a>
+      <mat-divider color="accent"></mat-divider>
+      <a mat-list-item routerLink="/more-http">More Http</a>
+      <mat-divider color="accent"></mat-divider>
+      <a mat-list-item routerLink="/httpcrudex">Rest Crud</a>
+      <mat-divider color="accent"></mat-divider>
+      <a mat-list-item routerLink="/switchex">Switch Ex</a>
+      <mat-divider color="accent"></mat-divider>
+      <a mat-list-item routerLink="/styleex">Style Ex</a>
+      <mat-divider color="accent"></mat-divider>
+      <a mat-list-item routerLink="/classex">Class Ex</a>
+      <mat-divider color="accent"></mat-divider>
+      <a mat-list-item routerLink="/modelex">Form ngModel Ex</a>
+      <mat-divider color="accent"></mat-divider>
+      <a mat-list-item routerLink="/validationex">Cus validation</a>    
+      <mat-divider color="accent"></mat-divider>
+      <a mat-list-item routerLink="/">Mat Awesome ToolBar</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>angular8</span>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

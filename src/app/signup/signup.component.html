@@ -1,0 +1,67 @@
+<div class="example-container">
+  
+
+
+    <mat-form-field [floatLabel]="options.value.floatLabel">
+        <mat-label>Last Name</mat-label>
+        <input matInput placeholder=" Enter Your Last Name">
+      </mat-form-field>
+  
+    <mat-form-field [floatLabel]="options.value.floatLabel">
+      <mat-label>First Name</mat-label>
+      <input matInput placeholder=" Enter Your First Name">
+    </mat-form-field>
+
+    <mat-form-field [floatLabel]="options.value.floatLabel">
+        <mat-label>Email </mat-label>
+        <input matInput placeholder=" Enter Your Email">
+      </mat-form-field>
+
+
+     
+
+
+
+      <mat-icon>user</mat-icon> <b> Gender </b> 
+      <mat-radio-group aria-label="Select Gender">
+         
+        <mat-radio-button value="male">Male</mat-radio-button>
+        <mat-radio-button value="female">Female</mat-radio-button>
+        <mat-radio-button value="other">Other</mat-radio-button>
+      </mat-radio-group>
+      <mat-icon>user</mat-icon> <b> Hobby </b> 
+      <section class="example-section">
+            <mat-checkbox class="example-margin" >Reading</mat-checkbox>
+            <mat-checkbox class="example-margin" >Writing</mat-checkbox>
+            <mat-checkbox class="example-margin" >Coding</mat-checkbox>
+            <mat-checkbox class="example-margin" >Playing</mat-checkbox>
+          </section>
+ 
+       
+          <mat-form-field
+          [hideRequiredMarker]="options.value.hideRequired"
+          [floatLabel]="options.value.floatLabel">
+          <mat-label><mat-icon>favorite</mat-icon> <b> Your </b> <i> City</i></mat-label>
+        <mat-select required>
+          <mat-option>-- Select A City --</mat-option>
+          <mat-option value="dhaka">Dhaka</mat-option>
+          <mat-option value="sylhet">Sylhet</mat-option>
+          <mat-option value="chitagong">Chitagong</mat-option>
+          <mat-option value="rajshahi">Rajshahi</mat-option>
+          
+        </mat-select>
+        
+      </mat-form-field>
+  
+
+          <mat-form-field class="example-full-width">
+                <input matInput #message maxlength="256" placeholder="Message">
+                <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint>
+                <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+              </mat-form-field>
+        
+          <br/>
+          <button mat-raised-button color="accent">Submit</button>
+
+  </div>
+  

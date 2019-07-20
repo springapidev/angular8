@@ -1,0 +1,7 @@
+<h1>Basic Http Request</h1>
+
+<button mat-button color="primary" (click)="makeHttpRequest()">Make Basic Http Request</button>
+<div *ngIf="loading">loading....</div>
+<pre>
+    {{data | json}}
+</pre>
